@@ -1,17 +1,17 @@
 ---
 import wwlogo from '../assets/WWlogo_transparent.png';
-import background from '../assets/background.svg';
 ---
 
 <div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>
 		<section id="hero">
 			<img src={wwlogo.src} width="115" height="54" alt="Astro Homepage" />
 			<h1>
-				WESTERN WAVE ROBOTICS
+				Western Wave
 			</h1>
-			</section>
+			<h2>
+				Underwater Robotics Team
+			</h2>
 		</section>
 	</main>
 </div>
@@ -28,7 +28,6 @@ import background from '../assets/background.svg';
 	}
 
 	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 		height: 100%;
 	}
 
@@ -47,8 +46,13 @@ import background from '../assets/background.svg';
 	}
 
 	h1 {
-		font-size: 22px;
-		margin-top: 0.25em;
+		font-family: "Pixelify Sans", sans-serif;
+		font-size: 64px;
+	}
+
+	h2 {
+		font-family: "Pixelify Sans", sans-serif;
+		font-size: 32px;
 	}
 
 	#links {
