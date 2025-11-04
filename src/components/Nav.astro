@@ -1,8 +1,60 @@
----
-import WWlogo from '../assets/WWlogo_transparent.png'
----
+<!-- NAVBAR YAY-->
+
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      <a href="/" class="text-2xl font-bold text-indigo-600">Western Wave</a>
+
+      <!-- Desktop -->
+      <div class="hidden md:flex space-x-6">
+        <!-- ADD LINKS HERE PLSSSSS -->
+        <a href="/" class="text-gray-700 hover:text-indigo-600">Home</a>
+        <a href="/about" class="text-gray-700 hover:text-indigo-600">About</a>
+        <a href="/sponsors" class="text-gray-700 hover:text-indigo-600">Sponsors</a>
+        <a href="/contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+      </div>
+
+      <!-- Mobile -->
+      <button id="nav-toggle" class="md:hidden flex items-center text-gray-700 hover:text-indigo-600 focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+        <svg id="icon-open" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden">
+    <!-- ADD LINKS HERE PLSSSSS -->
+    <a href="/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+    <a href="/about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
+    <a href="/projects" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Projects</a>
+    <a href="/contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+  </div>
 
 
-<div id="container">
-  <img id="logo" src={WWlogo.src} alt="Western Wave Logo">
-</div>
+  <!-- JAVASCRIPT STUFFS -->
+  <script is:inline>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('icon-open');
+    const closeIcon = document.getElementById('icon-close');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = !menu.classList.contains('hidden');
+      if (isOpen) {
+        menu.classList.add('hidden');
+        openIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        toggle.setAttribute('aria-expanded', 'false');
+      } else {
+        menu.classList.remove('hidden');
+        openIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+  </script>
+</nav>
