@@ -4,6 +4,7 @@ MUN x CNA Student Team
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
+(pnpm is reccomended)
 
 | Command        | Action                                       |
 | :------------- | :------------------------------------------- |
