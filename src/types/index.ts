@@ -2,7 +2,7 @@ export interface SiteConfig extends HeaderProps {
   title: string;
   description: string;
   author: string;
-  socialLinks: { text: string; href: string }[];
+  socialLinks: { text: string; href: string; logo: string; }[];
   socialImage: string;
   canonicalURL?: string;
 }

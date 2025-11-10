@@ -21,12 +21,12 @@ const ogImgUrl = canonicalURL + socialImage;
 
 <!doctype html>
 <html lang="en" class="scroll-pt-16 scroll-smooth">
-  	<head>
+  <head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="author" content={author} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/westernwave_logo.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 
@@ -34,15 +34,9 @@ const ogImgUrl = canonicalURL + socialImage;
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:image" content={ogImgUrl} />
+  </head>
 
-    	<meta property="twitter:card" content="summary_large_image" />
-    	<meta property="twitter:url" content={canonicalURL} />
-    	<meta property="twitter:title" content={title} />
-    	<meta property="twitter:description" content={description} />
-    	<meta property="twitter:image" content={ogImgUrl} />
-  	</head>
-
-	<body class="bg-black font-sans">
+	<body class="bg-cyan font-sans">
 		<Header siteLogo={siteLogo} navLinks={navLinks} />
 		<main class="mx-auto max-w-3xl px-5">
 			<slot />
