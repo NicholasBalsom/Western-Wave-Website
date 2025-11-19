@@ -7,17 +7,23 @@ export interface SiteConfig extends HeaderProps {
   canonicalURL?: string;
 }
 
-export interface SiteContent {
-  hero: HeroProps;
-  about: AboutProps;
+export interface HomePage {
+  hero: HeroProps,
+  about: SectionProps,
+  sponsors: SectionProps
+}
+
+export interface AboutPage {
+  hero: HeroProps
 }
 
 export interface HeroProps {
   team: string;
 }
 
-export interface AboutProps {
-  description: string;
+export interface SectionProps {
+  title: string;
+  content: string;
 }
 
 export interface HeaderProps {

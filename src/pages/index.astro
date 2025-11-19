@@ -1,11 +1,14 @@
 ---
-import { SITE_CONTENT } from "@config";
+import { HOME_PAGE } from "@config";
 import Hero from "@components/Hero.astro";
+import Section from "@components/Section.astro"
 import Layout from "@layouts/Layout.astro";
 
 import "../styles/global.css";
 ---
 
 <Layout>
-  <Hero {...SITE_CONTENT.hero} />
+  <Hero {...HOME_PAGE.hero} />
+  <Section {...HOME_PAGE.about} />
+  <Section {...HOME_PAGE.sponsors} />
 </Layout>
