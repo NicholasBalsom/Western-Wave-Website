@@ -9,7 +9,7 @@ const { siteLogo, navLinks } = Astro.props;
 ---
 
 <header
-  class="sticky top-0 z-50 mx-auto flex max-w-8xl animate-slide-in justify-between bg-cyan px-5 py-4"
+  class="sticky top-0 z-50 mx-auto flex max-w-screen-xl animate-slide-in justify-between bg-cyan px-8"
 >
   <a href="/" aria-label="Home link">
     <Image
@@ -33,7 +33,7 @@ const { siteLogo, navLinks } = Astro.props;
   </button>
 
   <nav
-    class="absolute top-20 right-5 hidden rounded-xl border border-neutral/40 bg-black px-4 py-5 text-white sm:static sm:block sm:border-0 sm:bg-transparent sm:p-0"
+    class="absolute top-20 right-5 hidden rounded-xl border border-neutral/40 bg-idk px-4 py-5 text-white sm:text-black sm:static sm:flex sm:border-0 sm:bg-transparent sm:p-0 items-center"
     id="main-menu"
   >
     <ul class="gap-2 sm:flex">
@@ -41,7 +41,7 @@ const { siteLogo, navLinks } = Astro.props;
         navLinks.map((link) => (
           <li class="relative">
             <a
-              class={`nav-item relative block p-2 text-sm font-medium transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-blue`}
+              class={`nav-item relative block p-2 text-sm font-bold transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-blue`}
               href={link.href}
             >
               {link.text}

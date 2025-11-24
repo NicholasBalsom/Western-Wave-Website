@@ -19,6 +19,7 @@ export interface AboutPage {
 
 export interface HeroProps {
   team: string;
+  img: string;
 }
 
 export interface SectionProps {

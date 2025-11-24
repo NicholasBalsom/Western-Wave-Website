@@ -22,7 +22,8 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const HOME_PAGE: HomePage = {
   hero: {
-    team: "Western Wave Robotics"
+    team: "Western Wave Robotics",
+    img: "/ROV_testing.jpg"
   },
   about: {
     title: "Who Are We?",
