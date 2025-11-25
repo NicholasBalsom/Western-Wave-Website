@@ -25,6 +25,7 @@ export interface HeroProps {
 export interface SectionProps {
   title: string;
   content: string;
+  img?: string
 }
 
 export interface HeaderProps {

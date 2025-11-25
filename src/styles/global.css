@@ -5,10 +5,10 @@
   --font-serif: "Gabarito Variable", ui-serif, serif;
 
   --color-primary: #2563eb;
-  --color-neutral: #94a3b8;
-  --color-white: #e2e8f0;
+  --color-neutral: #e2e8f0;
+  --color-white: #fff;
   --color-black: #0e141b;
-  --color-cyan: #CAE9FF;
+  --color-cyan: #cdedfd;
   --color-idk: #1B4965;
 
   --text-xs: 0.875rem;
