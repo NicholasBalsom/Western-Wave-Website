@@ -25,15 +25,20 @@ export const HOME_PAGE: HomePage = {
     team: "Western Wave Robotics",
     img: "/ROV_testing.jpg"
   },
-  about: {
+  aboutus: {
     title: "Who Are We?",
     content: "Western Wave is a team of undergraduate students from College of the North Atlantic (CNA) and Memorial University’s Grenfell Campus. We are a student design team that designs and builds remotely operated vehicles (ROVs) and competes in the MATE ROV Competition. We are the first and only undergraduate ROV team in Corner Brook, Newfoundland and Labrador.",
-    img: "/awards_ceramony_2025.jpg"
+    img: {src: "/awards_ceramony_2025.jpg", alt: "Team Picture"},
+    link: {text: "Learn more about us", herf: "/about"}
+  },
+  competition: {
+    title: "MATE ROV COMP",
+    content: "",
+    img: {src: "", alt: ""},
+    link: {text: "", herf: ""}
   },
   sponsors: {
     title: "Sponsors",
     content: "home.sponsors -> content here"
   }
 };
-
-// #5755ff

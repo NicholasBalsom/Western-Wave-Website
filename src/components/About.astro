@@ -2,26 +2,26 @@
 import type { SectionProps } from '@types'
 type Props = SectionProps
 
-const {title, content, img} = Astro.props
+const {title, content, img, link} = Astro.props
 ---
 
-<!-- Default Content Display "Section" Component -->
+<!-- About US Section -->
 
 <section class="text-black font-serif bg-cyan">
   <div class="container max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:px-6">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
       <div class="mt-12 md:mt-0">
-        <img src={img} alt="">
+        <img src={img?.src} alt={img?.alt}>
       </div>
       <div class="max-w-lg">
-        <h2 class="text-5xl font-bold">
+        <h2 class="text-4xl font-bold">
           {title}
         </h2>
-        <p class="mt-4 text-gray-600 text-lg">
+        <p class="mt-4 text-gray-600 text-base sm:text-lg md:text-xl">
           {content}
         </p>
         <div class="mt-8">
-          <a class="text-blue-500 hover:text-blue-600 font-medium" href="/about">Learn more about us
+          <a href={link?.herf} class="text-blue-500 hover:text-blue-600 font-medium">{link?.text}
             <span class="ml-2">&#8594;</span></a>
         </div>
       </div>

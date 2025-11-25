@@ -8,13 +8,14 @@ export interface SiteConfig extends HeaderProps {
 }
 
 export interface HomePage {
-  hero: HeroProps,
-  about: SectionProps,
-  sponsors: SectionProps
+  hero: HeroProps;
+  aboutus: SectionProps;
+  competition: SectionProps;
+  sponsors: SectionProps;
 }
 
 export interface AboutPage {
-  hero: HeroProps
+  hero: HeroProps;
 }
 
 export interface HeroProps {
@@ -25,7 +26,8 @@ export interface HeroProps {
 export interface SectionProps {
   title: string;
   content: string;
-  img?: string
+  img?: { src: string, alt: string};
+  link?: { text: string, herf: string };
 }
 
 export interface HeaderProps {
