@@ -1,5 +1,5 @@
 ---
-import Menu from "@icons/Menu.astro";
+import Menu from "@assets/Menu.astro";
 import { Image } from "astro:assets";
 import type { HeaderProps } from "@types";
 
@@ -9,7 +9,7 @@ const { siteLogo, navLinks } = Astro.props;
 ---
 
 <header
-  class="sticky top-0 z-50 mx-auto flex max-w-screen animate-slide-in justify-between bg-cyan px-8 drop-shadow-lg"
+  class="sticky top-0 z-50 mx-auto flex max-w-screen justify-between bg-cyan px-8 drop-shadow-lg"
 >
   <a href="/" aria-label="Home link">
     <Image

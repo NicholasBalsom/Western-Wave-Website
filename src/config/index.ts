@@ -2,9 +2,8 @@ import type { HomePage, SiteConfig,  } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
   title: "Western Wave Robotics",
-  author: "Western Wave Robotics",
-  description:
-    "Competitive student team competing in the MATE ROV competition",
+  author: "Nicholas Balsom",
+  description: "Competitive student team competing in the MATE ROV competition",
   siteLogo: "/westernwave_logo.png", // UPDATE
   navLinks: [
     { text: "Home", href: "/" },
