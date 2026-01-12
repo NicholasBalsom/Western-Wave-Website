@@ -1,5 +1,5 @@
-# Western Wave Robotics Website DEVELOPMENT BRANCH
-WEBSITE DEVELOPMENT IN PROGRESS...
+# Western Wave DEV BRANCH
+WEB DEVELOPMENT IN PROGRESS...
 
 ## 🧞 Commands
 
